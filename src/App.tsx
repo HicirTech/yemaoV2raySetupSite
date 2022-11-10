@@ -1,21 +1,12 @@
-import "./App.css";
-import reactLogo from "./assets/react.svg";
+import MainContent from "./components/MainContent";
+import Wrapper from "./components/Wrapper/Wrapper";
 
-const App = () =>{
-
+const App = () => {
   return (
-    <div className="App">
-      <div>
-        <a href="#" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="#" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>腋毛下载站 进入维护模式!</h1>
-    </div>
+    <Wrapper>
+      <MainContent />
+    </Wrapper>
   );
-}
+};
 
 export default App;
