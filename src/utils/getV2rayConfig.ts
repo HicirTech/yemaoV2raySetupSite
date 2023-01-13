@@ -13,9 +13,9 @@ const getV2rayConfig = async () => {
 
   const v2rayConfig = v2rayConfigItem as unknown as IPockbaseV2rayConfigItem;
 
-  const jsonConfigString = JSON.stringify(JSON.parse(v2rayConfig.jsonConfig));
+  const v2rayConfigString = JSON.stringify(JSON.parse(v2rayConfig.v2rayConfig));
 
-  await copyToClipBoard(jsonConfigString);
+  await copyToClipBoard(v2rayConfigString);
 };
 
 const copyToClipBoard = async (textToCopy: string) => {

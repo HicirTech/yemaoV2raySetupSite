@@ -23,5 +23,7 @@ const downloadFile = (fileLink: string) => {
   document.body.removeChild(link);
 };
 
-export { getFileByNameAsync };
+const PC_V2RAY_FILE_NAME = "V2rayPC";
+const ANDROID_V2RAY_FILE_NAME = "v2rayPhone";
 
+export { getFileByNameAsync, PC_V2RAY_FILE_NAME, ANDROID_V2RAY_FILE_NAME };
