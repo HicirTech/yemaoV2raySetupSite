@@ -1,9 +1,8 @@
 import { IntlShape } from "react-intl";
 import moment from "moment";
 
-const envDateString = import.meta.env.VITE_LAST_UPDATED;
-
-const developmentDate = moment(envDateString);
+const ENV_LAST_UPDATED = import.meta.env.VITE_LAST_UPDATED;
+const developmentDate = moment(ENV_LAST_UPDATED);
 
 const useI18nTranslations = (intl: IntlShape) => ({
   headerText: intl.formatMessage({ id: "headerText" }),
