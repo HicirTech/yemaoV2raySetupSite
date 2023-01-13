@@ -10,7 +10,7 @@ const UserAuthenticatorView = ({
   i18nTranslations,
 }: IUserAuthenticatorView) => {
   return (
-    <Box>
+    <Box sx={{ minWidth: "350px" }}>
       <Typography variant="h6">
         {i18nTranslations.userAuthenticatorTitleText}
       </Typography>
@@ -21,6 +21,7 @@ const UserAuthenticatorView = ({
         }
         color="primary"
         value={inputValue}
+        fullWidth
         type="password"
         aria-label={i18nTranslations.userAuthenticatorAriaLabel}
         placeholder={i18nTranslations.userAuthenticatorPlaceholder}
