@@ -62,7 +62,12 @@ const MainContentView = ({
     <Box className={classes.outerBox}>
       <Box className={classes.header}>
         <Fade in timeout={1000}>
-          <Typography variant="h2">{i18nTranslations.headerText}</Typography>
+          <Box>
+            <Typography variant="h2">{i18nTranslations.headerText}</Typography>
+            <Typography variant="h4">
+              {i18nTranslations.headerUpdateTime}
+            </Typography>
+          </Box>
         </Fade>
       </Box>
       <Fade in timeout={500}>

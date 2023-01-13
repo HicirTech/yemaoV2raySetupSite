@@ -3,6 +3,7 @@ interface IMainContentView {
     clientDownloadHeaderTitleText: string;
     clientDownloadHeaderBodyText: string;
     headerText: string;
+    headerUpdateTime: string;
   };
   onAuthenticationSuccess: () => void;
   userAuthDone: boolean;
