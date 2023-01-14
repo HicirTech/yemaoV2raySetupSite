@@ -4,7 +4,7 @@ import IPockbaseFileLocationItem from "./interfaces/IPockbaseFileLocationItem";
 const getFileByNameAsync = async (fileName: string) => {
   const client = await getConnection();
 
-  const fileRecord = await client.records.getList("fileLocation", 1, 1, {
+  const fileRecord = await client.collection("fileLocation").getList( 1, 1, {
     filter: `fileName="${fileName}"`,
   });
 

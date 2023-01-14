@@ -4,7 +4,7 @@ import IPockbaseTranslationItem from "./interfaces/IPockbaseTranslationItem";
 const getChineseTranslation = async () => {
   const client = await getConnection();
 
-  const translations = await client.records.getList("yemaoTranslation", 1, 1);
+  const translations = await client.collection("yemaoTranslation").getList( 1, 1);
 
   const translationItem = translations.items.pop();
   if (!translationItem) {

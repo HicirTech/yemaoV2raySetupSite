@@ -4,7 +4,7 @@ import IPockbaseV2rayConfigItem from "./interfaces/IPockbaseV2rayConfigItem";
 const getV2rayConfig = async () => {
   const client = await getConnection();
 
-  const v2rayConfigs = await client.records.getList("v2rayConfig", 1, 1);
+  const v2rayConfigs = await client.collection("v2rayConfig").getList( 1, 1);
 
   const v2rayConfigItem = v2rayConfigs.items.pop();
   if (!v2rayConfigItem) {
